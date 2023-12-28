@@ -35,15 +35,16 @@ class _calciState extends State<calci> {
                   ctrl.clear();
                 },
                     child:Text('clr')),
+
                 ElevatedButton(onPressed: (){
 
                   ctrl.text = "%";
                   oper = "%";
                   clk =true;
 
-
-
                 }, child: Text("%")),
+
+
                 ElevatedButton(onPressed: (){
                   setState(() {
                     ctrl.text=ctrl.text.substring(0,ctrl.text.length-1);
@@ -71,6 +72,8 @@ class _calciState extends State<calci> {
                   }
                 },
                   child: Text("7"),style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),),
+
+
                 ElevatedButton(onPressed: ()
                 {
                   if(clk)

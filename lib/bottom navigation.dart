@@ -19,7 +19,7 @@ class _bottomnavigationState extends State<bottomnavigation> {
     amazon(),
     spoti(),
     ins(),
-    report()
+    report(),
 
     ];
     void tab(index)

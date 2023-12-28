@@ -8,7 +8,7 @@ class ott extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-         Image(image: AssetImage(''))
+         Image(image: AssetImage('pi/jpeg')),
         ],
       )
     );

@@ -4,6 +4,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/brief.dart';
 import 'package:untitled/color.dart';
+
+import 'class1.dart';
 class amazon extends StatefulWidget {
   const amazon({super.key});
   @override
@@ -83,8 +85,7 @@ class _amazonState extends State<amazon> {
                 height: 120,
                 child:ListView.builder(
                   scrollDirection: Axis.horizontal,
-
-                      itemCount: 30,
+                      itemCount: pic.length,
                       itemBuilder: (BuildContext context, int index) {
                         return Container(
                           height: 75,
@@ -94,17 +95,16 @@ class _amazonState extends State<amazon> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                    height: 70,
-                                    width: 100,
+                                child:
+                                Container(height:60,
+                                  width: 60,
                                     decoration: BoxDecoration(
-                                      border: Border.all(color: Colors.black54),
-                                      shape: BoxShape.circle,
-                                      image:DecorationImage(
-                                        image: AssetImage("linux/ii.png"))
-                                      )
-                                    ),
+                                      image: DecorationImage(image: NetworkImage(pic[index].image),fit: BoxFit.fill),
+                                        shape: BoxShape.circle),
+
+
                               ),
+                                ),
                                  // child: Image(image: AssetImage("linux/ii.png"),
                                  // )
                         //),
@@ -147,7 +147,7 @@ class _amazonState extends State<amazon> {
 
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("pi/itr.jpeg"),fit: BoxFit.fill)),
+                          image: NetworkImage("https://feeds.abplive.com/onecms/images/uploaded-images/2022/08/03/53c830c8cb0108328253259498ae48a71659508143_original.png"),fit: BoxFit.fill)),
 
                   ),
                 );
@@ -179,7 +179,7 @@ class _amazonState extends State<amazon> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
-                                      image: AssetImage("pi/picc.jpg"),
+                                      image: AssetImage("pi/picc.jpeg"),
                                       fit: BoxFit.fill)),
                             ),
                           ),

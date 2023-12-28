@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/amazon.dart';
-import 'package:untitled/asd.dart';
+import 'package:untitled/onetapchanging.dart';
 import 'package:untitled/bmi.dart';
 
 import 'package:untitled/brief.dart';
@@ -36,7 +36,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
   // This widget is the root of your application.
   @override
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ott8(),
+      home:spoti(),
     );
   }
 
